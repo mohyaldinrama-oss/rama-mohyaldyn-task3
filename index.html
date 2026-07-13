@@ -123,9 +123,9 @@
             >
           </li>
         </ul>
-        <form action="">
+        <form action="#" method="post">
           <fieldset>
-            <legend>Technical Surver</legend>
+            <legend>Technical Survey</legend>
             <p>-your control level:</p>
             <input
               type="radio"
@@ -138,24 +138,40 @@
             <input type="radio" id="inter" name="level" value="int" />
             <label for="inter">Intermediate</label>
             <br />
+
             <p>-Skills You Have</p>
             <input type="checkbox" id="html5" name="Skills" value="html" />
             <label for="html5">HTML5</label>
             <input type="checkbox" id="git" name="Skills" value="git" />
             <label for="git">Git & GitHub</label>
+            <p>
+              <label for="track">Preferred Track:</label>
+              <select id="track" name="track">
+                <option value="front">Front-End Development</option>
+                <option value="back">Back-End Development</option>
+              </select>
+            </p>
+            <p>
+              <label for="message">Leave a message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="40"
+                placeholder="Write your notes here..."
+              ></textarea>
+            </p>
           </fieldset>
           <p>
-            <button type="submit">Submit Applications</button>
+            <button type="submit">Submit Application</button>
             <button type="reset">Reset Form</button>
           </p>
         </form>
       </section>
     </main>
     <hr />
-    <center>
-      <footer>
-        <p>&copy;2026 Rama mohyaldyn . All rights reserved.</p>
-      </footer>
-    </center>
+    <footer>
+      <p>&copy; 2026 Rama mohyaldyn . All rights reserved.</p>
+    </footer>
   </body>
 </html>
